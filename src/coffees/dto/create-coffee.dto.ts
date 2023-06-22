@@ -1,4 +1,4 @@
-import { IsString } from "class-validator";
+import { IsString } from 'class-validator';
 
 export class CreateCoffeeDto {
   @IsString()
@@ -8,5 +8,5 @@ export class CreateCoffeeDto {
   brand: string;
 
   @IsString({ each: true })
-  flavors: string[];
+  flavours: string[];
 }

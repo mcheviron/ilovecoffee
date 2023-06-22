@@ -9,6 +9,10 @@ async function bootstrap() {
       whitelist: true,
       forbidNonWhitelisted: true,
       transform: true,
+      transformOptions: {
+        // Will make sure that the input in DTOs is automatically converted
+        enableImplicitConversion: true,
+      },
     }),
   );
   await app.listen(3000);
